@@ -74,12 +74,26 @@
     <p>Monday to Friday 9 a.m.&ndash;6p.m.</p>
     <p>Closed on Saturdays & Sundays</p>
     <br>
-    <p>Call us or book online for appointments.</p>
-    <p>If you have any other questions, you can contact us through one of the methods below:</p>
+    <p>If you have any questions, you can contact us via email:</p>
     <br>
-    <p>0449 170 054</p>
-    <p>fremgamassage@gmail.com</p>
-    <p>4 EXE CT, BEECHBORO 6063 - next to FEG bookbinding</p>
+    
+    <script>
+  const country = "+61";        
+  const area = "449";           
+  const number = "170054";      
+  const phone = `${country} ${area} ${number}`;
+  document.getElementById("phone").innerHTML = `<a href="tel:${country}${area}${number}">${phone}</a>`;
+</script>
+
+    <span id="email"></span>
+
+      <script>
+        const user = "fremgamassage";
+        const domain = "gmail.com";
+        const email = `${user}@${domain}`;
+        document.getElementById("email").innerHTML = `<a href="mailto:${email}">${email}</a>`;
+      </script>
+    
   </section>
 
   <section>
