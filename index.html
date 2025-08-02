@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <!-- Basic Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feelingood Massage Therapy | Remedial & Relaxation in Perth</title>
+  <meta name="description" content="As a skilled Remedial Massage Therapist in Perth, I provide personalised care for pain and injury using cupping, dry needling, trigger point, and myofascial release.">
+
+  <!-- Canonical URL (optional but useful) -->
+  <link rel="canonical" href="https://www.feelingoodmassagetherapy.com.au/" />
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="image/icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="image/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="image/icon/favicon-16x16.png">
+  <link rel="manifest" href="image/icon/site.webmanifest">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+  <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+  <meta property="og:title" content="Feelingood Massage Therapy" />
+  <meta property="og:description" content="Experience tailored massage treatments in Perth including cupping, dry needling, trigger point, myofascial release and hot stone therapy." />
+  <meta property="og:image" content="https://www.feelingoodmassagetherapy.com.au/image/og-image.jpg" />
+  <meta property="og:url" content="https://www.feelingoodmassagetherapy.com.au/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Feelingood Massage Therapy" />
+  <meta name="twitter:description" content="Experience tailored massage treatments in Perth including cupping, dry needling, trigger point, myofascial release and hot stone therapy." />
+  <meta name="twitter:image" content="https://www.feelingoodmassagetherapy.com.au/image/og-image.jpg" />
+
+  <!-- Keywords (optional, but not heavily used by Google) -->
+  <meta name="keywords" content="remedial massage therapy, cupping, dry needling, myofascial release, trigger point, hot stone, Beechboro, Perth" />
+
+  <!-- Author (optional) -->
+  <meta name="author" content="Feelingood Massage Therapy" />
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html">
+      <div class="logo">
+          <img src="image/logo.png" alt="Logo" />
+      </div>
+    </a>
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+<section class="hero-index" style="background-image: url('image/index.jpg')">
+  <div class="hero-overlay"></div>
+  <div class="hero-text">
+    <div class="hero-heading">
+      <h1>Feelingood Massage Therapy</h1>
+    </div>
+    <div class="hero-subheading">
+      <h2>Specialist in body rehabilitation</h2>
+    </div>
+  </div>
+</section>
+
+  <!-- Body -->
+  <section class="intro">
+    <p>
+      <em>As a skilled Remedial Massage Therapist, my purpose is to deliver personalized massage treatments that effectively address your injuries, aches, and pains, ensuring you receive the care you need for optimal recovery and well-being.</em>
+    </p>
+  </section>
+
+  <section>
+    <button class="cta-button"><a href="https://book.carepatron.com/Feelingood-Massage-Therapy/Francesco-Emanuele?p=Jd2XtkF1TaW5lGc.x242Yg&s=GuqKRIvF" target="_blank" rel="noopener noreferrer">Book an appointment</a></button>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Feelingood Massage Therapy. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+      menuToggle.innerHTML = navLinks.classList.contains("show") ? "&times;" : "&#9776;";
+    });
+  </script>
+
+</body>
+</html>
