@@ -14,13 +14,13 @@ body {
   padding-top: 0;
 }
 
-button {
+button, a {
   font-family: "Lora", serif;
 }
 
 a {
-    text-decoration: none; /* Removes underline */
-    color: inherit; /* Inherits color from parent element */
+  text-decoration: none;
+  color: inherit;
 }
 
 /* ========================
@@ -55,13 +55,7 @@ a {
   gap: 2rem;
 }
 
-.nav-links a:hover {
-  background-color: rgba(65, 80, 80, 0.1);
-  color: #022;
-}
-
 .nav-links a {
-  text-decoration: none;
   color: #044;
   font-weight: 200;
   font-size: 1.5em;
@@ -69,6 +63,11 @@ a {
   border-radius: 10px;
   display: inline-block;
   transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: rgba(65, 80, 80, 0.1);
+  color: #022;
 }
 
 .menu-toggle {
@@ -81,9 +80,9 @@ a {
 }
 
 /* ========================
-   Hero Section (index)
+   Hero Sections
    ======================== */
-.hero-index {
+.hero {
   position: relative;
   height: 63vh;
   background-size: cover;
@@ -96,7 +95,7 @@ a {
   text-align: center;
 }
 
-.hero-index .hero-overlay {
+.hero .hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -106,183 +105,52 @@ a {
   z-index: 1;
 }
 
-.hero-index .hero-text {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #000;
-  animation: fadeIn 1s ease-out both;
-}
-
-.hero-index .hero-heading h1 {
-  font-size: clamp(2rem, 6vw, 5rem);
-  font-weight: 400;
-  margin-bottom: 0.5rem;
-}
-
-.hero-index .hero-subheading h2 {
-  font-size: clamp(1rem, 4vw, 2rem);
-  font-weight: 400;
-  margin-top: 0;
-}
-/* ========================
-   Hero Section (about)
-   ======================== */
-.hero-about {
-  position: relative;
-  height: 63vh;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 100px;
-  overflow: hidden;
-  text-align: center;
-}
-
-.hero-about .hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(40, 40, 40, 0.577);
-  z-index: 1;
-}
-
-.hero-about .hero-text {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #ffffff;
-  animation: fadeIn 1s ease-out both;
-}
-
-.hero-about .hero-heading h1 {
-  font-size: clamp(2rem, 6vw, 5rem);
-  font-weight: 400;
-  margin-bottom: 0.5rem;
-}
-
-.hero-about .hero-subheading h2 {
-  font-size: clamp(1rem, 4vw, 4rem);
-  font-weight: 400;
-  margin-top: 0;
-}
-
-/* ========================
-   Hero Section (contact)
-   ======================== */
-.hero-contact {
-  position: relative;
-  height: 63vh;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 100px;
-  overflow: hidden;
-  text-align: center;
-}
-
+.hero-about .hero-overlay,
+.hero-services .hero-overlay,
 .hero-contact .hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(40, 40, 40, 0.577);
-  z-index: 1;
+  background: rgba(30, 30, 30, 0.4); /* Darker or lighter as needed */
 }
 
-.hero-contact .hero-text {
+
+.hero .hero-text {
   position: relative;
   z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #ffffff;
-  animation: fadeIn 1s ease-out both;
+  animation: fadeIn 3s ease-out both;
 }
 
-.hero-contact .hero-heading h1 {
-  font-size: clamp(2rem, 6vw, 5rem);
-  font-weight: 400;
-  margin-bottom: 0.5rem;
-}
-
-.hero-contact .hero-subheading h2 {
-  font-size: clamp(1rem, 4vw, 4rem);
-  font-weight: 400;
-  margin-top: 0;
-}
-
-/* ========================
-   Hero Section (services)
-   ======================== */   
-.hero-services {
-  position: relative;
-  height: 63vh;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 100px;
-  overflow: hidden;
-  text-align: center;
-}
-
-.hero-services .hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(40, 40, 40, 0.577);
-  z-index: 1;
-}
-
+.hero-about .hero-text,
+.hero-contact .hero-text,
 .hero-services .hero-text {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   color: #ffffff;
-  animation: fadeIn 1s ease-out both;
 }
 
-.hero-services .hero-heading h1 {
+.hero-index .hero-text {
+  color: #000000;
+}
+
+.hero-heading h1 {
   font-size: clamp(2rem, 6vw, 5rem);
   font-weight: 400;
   margin-bottom: 0.5rem;
 }
 
-.hero-services .hero-subheading h2 {
-  font-size: clamp(1rem, 4vw, 4rem);
+.hero-subheading h2 {
+  font-size: clamp(1rem, 4vw, 2rem);
   font-weight: 400;
   margin-top: 0;
 }
 
 .sub-hero-h2 {
   text-align: center;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-top: 6rem;
-  margin-bottom: 6rem;
-  font-size: clamp(1.2rem, 4vw, 2rem);
+  margin: 6rem 1rem;
+  font-size: clamp(1.2rem, 2vw, 2rem);
   font-style: italic;
   font-weight: 400;
   color: #1f6463;
 }
-
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
@@ -290,7 +158,7 @@ a {
 }
 
 /* ========================
-   Intro Section
+   Intro & Content
    ======================== */
 .intro {
   display: flex;
@@ -318,50 +186,42 @@ a {
 .content-description-contact {
   padding: 1rem;
   line-height: 1.6;
-  font-size: rem;
+  font-size: 1rem;
   text-align: center;
 }
 
 /* ========================
-   Call-to-Action Button
+   Buttons
    ======================== */
-.cta-button {
-  background-color: #1f6463;
-  color: white;
+.cta-button, .cta-button-services {
   padding: 1rem 1.8rem;
-  border: none;
   border-radius: 25px;
-  font-size: 1rem;
   font-weight: 500;
   line-height: 1.2;
   cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button {
+  background-color: #1f6463;
+  color: white;
   display: block;
   margin: 2rem auto 0 auto;
-  text-align: center;
-  transition: background-color 0.9s ease;
   font-size: clamp(0.7rem, 1vw, 1rem);
+  border: 0;
 }
 
 .cta-button:hover {
   background-color: #2f908e;
-}
-
-.service-container {
-  text-align: center;
+  
 }
 
 .cta-button-services {
   background-color: transparent;
   color: #1f6463;
-  padding: 1rem 1.8rem;
-  border: 0px;
-  border-radius: 25px;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.2;
-  cursor: pointer;
+  border: 0;
   display: inline-block;
-  transition: background-color 0.3s ease, color 0.3s ease;
   margin: 0.5rem;
 }
 
@@ -374,15 +234,18 @@ a {
   color: white;
 }
 
+.service-container {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
 .service-text {
   margin: 0 auto;
   width: 47.3%;
 }
 
-
-
 /* ========================
-   Mobile Responsive Navbar
+   Responsive Navbar
    ======================== */
 @media (max-width: 768px) {
   .nav-links {
@@ -403,7 +266,6 @@ a {
 
   .nav-links.show {
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(12px);
@@ -411,19 +273,8 @@ a {
   }
 
   .nav-links a {
-    text-decoration: none;
-    color: #044;
-    font-weight: 200;
     font-size: 1.2rem;
     padding: 5px;
-    border-radius: 10px;
-    display: inline-block;
-    transition: background 0.3s;
-  }
-
-  .nav-links a:hover {
-    background-color: rgba(65, 80, 80, 0.1);
-    color: #022;
   }
 
   .menu-toggle {
